@@ -17,5 +17,5 @@ table and an Internet Gateway or Virtual Private Gateway.
 */
 resource "aws_route_table_association" "dev_public_assoc" {
   route_table_id = aws_route_table.dev-public-rt.id
-  subnet_id = aws_subnet.dev_public_subnet.id
+  subnet_id      = aws_subnet.dev_public_subnet.id
 }

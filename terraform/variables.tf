@@ -15,8 +15,12 @@ variable "purpose" {
 }
 
 variable "ec2_key" {
-  type = string
+  type    = string
   default = "~/.ssh/dev-env-key.pub"
+}
+
+variable "host_os" {
+  type = string
 }
 
 locals {
