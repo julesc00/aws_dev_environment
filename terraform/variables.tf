@@ -33,5 +33,8 @@ locals {
     route-public = {
       Name = "dev_public-rt"
     }
+    instance = {
+      Name = "dev_node"
+    }
   }
 }
