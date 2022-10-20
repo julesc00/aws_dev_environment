@@ -24,7 +24,7 @@ resource "aws_instance" "dev_node" {
   This is exclusively for this project since I use different tfvars files.
   */
   provisioner "local-exec" {
-    command = templatefile("${var.host_os}-config.tpl", {
+    command = templatefile("${var.host_os}-ssh-config.tpl", {
       hostname = self.public_ip,
       user = "ubuntu",
       identityfile = var.ec2_key

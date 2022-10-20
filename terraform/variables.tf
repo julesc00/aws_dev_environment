@@ -21,6 +21,7 @@ variable "ec2_key" {
 
 variable "host_os" {
   type = string
+  description = "Use 'linux' for macOS or Linux or 'windows' for Windows."
 }
 
 locals {
@@ -29,7 +30,7 @@ locals {
       Name = "dev_env_vpc"
     }
     subnets = {
-      subnet_public_name = "dev_public"
+      Name = "dev_public"
     }
     igw = {
       Name = "dev-igw"

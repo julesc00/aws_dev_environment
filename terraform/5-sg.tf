@@ -8,7 +8,7 @@ resource "aws_security_group" "dev-sg" {
     from_port   = 0
     to_port     = 0
     protocol    = "-1"                 # Allow all
-    cidr_blocks = ["187.205.77.81/32"] # The '32' means to only use such ip v4 address or 0.0.0.0/0 for all access
+    cidr_blocks = ["0.0.0.0/0"] # The '/32' means to only use such ip v4 address or 0.0.0.0/0 for all access
   }
 
   egress {
